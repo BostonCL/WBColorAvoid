@@ -1,0 +1,83 @@
+#VRML_SIM R2022b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.36784994293200596 0.23273941033432438 0.9002881685116999 2.105927462353867
+  position -0.09469459752799445 -1.3435379779112906 0.47812708701767237
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation -0.366073 -0.653903 2.18159e-14
+  rotation 0 0 1 2.87979
+}
+E-puck {
+  hidden position_0_0 -2404.069965184213
+  hidden position_0_1 3657.8789584510687
+  hidden linearVelocity_0 3.421412873318921e-12 1.0233291314278666e-10 4.2632564145606015e-16
+  hidden angularVelocity_0 -6.822151973853564e-09 2.282481004762971e-10 -1.827121218654421e-14
+  hidden rotation_1 0 -1 0 3.893177841610799
+  hidden linearVelocity_1 4.512458800529572e-12 1.364436251161699e-10 4.440954867460885e-16
+  hidden angularVelocity_1 -6.8221486067051004e-09 2.284492430067871e-10 -1.6946924470711467e-14
+  hidden rotation_2 0 1 0 1.065109672549354
+  hidden linearVelocity_2 4.6122977140203656e-12 1.3644016295555227e-10 -2.666410955854359e-16
+  hidden angularVelocity_2 -6.822153409467479e-09 2.2791156832363198e-10 -1.8467993566108703e-14
+  translation -0.3885609919537366 -0.5775229754180543 -6.396199576587727e-05
+  rotation 1.4716708167568704e-09 -1.832870707020322e-09 1 1.537375885518786
+  controller "ColorAvoid"
+}
+Solid {
+  translation -0.061911 -0.552603 0.06
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        metalness 0
+      }
+      geometry Cone {
+        bottomRadius 0.05
+        height 0.1
+      }
+    }
+  ]
+}
+Solid {
+  translation -0.478804 -0.892857 0.06
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        metalness 0
+      }
+      geometry Cone {
+        bottomRadius 0.05
+        height 0.1
+      }
+    }
+  ]
+  name "solid(1)"
+}
+Solid {
+  translation -0.615921 -0.513488 0.06
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 1
+        metalness 0
+      }
+      geometry Cone {
+        bottomRadius 0.05
+        height 0.1
+      }
+    }
+  ]
+  name "solid(2)"
+}
